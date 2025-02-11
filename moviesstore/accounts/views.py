@@ -4,6 +4,7 @@ from django.contrib.auth.forms import UserCreationForm
 from django.shortcuts import redirect
 from django.contrib.auth import login as auth_login, authenticate, logout as auth_logout
 from django.contrib.auth.decorators import login_required
+from django.contrib.auth.models import User
 
 # Create your views here.
 
@@ -48,3 +49,9 @@ def signup(request):
                 template_data['form'] = form
                 return render(request, 'accounts/signup.html',
                     {'template_data': template_data})
+
+def password_reset(request):
+    if request.method == "POST":
+        email = request.POST.get("email")
+        print("Password reset requested for:", email)
+    return render(request, "accounts/password_reset.html")
