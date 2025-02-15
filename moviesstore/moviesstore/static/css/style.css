@@ -1,3 +1,7 @@
+body {
+  font-family: 'Arial', sans-serif;
+}
+
 .bg-index {
   background: url("/static/img/background.jpg") no-repeat fixed;
   background-size: 100% auto;
@@ -8,7 +12,8 @@
 }
 
 .bg-dark {
-  background-color: #2E2E2E !important;
+  background: url("/static/img/banner-bg.png") no-repeat fixed;
+  background-size: 100% auto;
 }
 
 .ms-footer {
