@@ -82,9 +82,14 @@ body {
 
 /* homepage index section */
 .index-bg {
-  background: red !important;
-  background-size: cover; /* Ensures full coverage */
-  background-position: center;
-  padding: 50px 0;
+  background: url("/static/img/popcorn.jpg") no-repeat center center;
+  height: 40vh;
+  width: 100%;
+  background-size: cover;
+  color: white;
+  position: relative;
 }
 
+.index-bg .container {
+  padding-top: 100px;
+}
