@@ -2,10 +2,10 @@ body {
   font-family: 'Arial', sans-serif;
 }
 
-.bg-index {
+/*.bg-index {
   background: url("/static/img/background.jpg") no-repeat fixed;
   background-size: 100% auto;
-}
+}*/
 
 .navbar a.nav-link {
   color: #FFFEF6 !important;
@@ -13,7 +13,11 @@ body {
 
 .navbar-nav {
   display: flex;
+  justify-content: space-between;
   gap: 15px;
+  padding: 20px 50px;
+  z-index: 10;
+  margin-left: 90%;
   align-items: center;
 }
 
