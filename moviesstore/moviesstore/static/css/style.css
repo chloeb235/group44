@@ -82,7 +82,7 @@ body {
 
 /* homepage index section */
 .index-bg {
-  background: url("/static/img/popcorn.jpg") no-repeat fixed;
+  background: red !important;
   background-size: cover; /* Ensures full coverage */
   background-position: center;
   padding: 50px 0;
