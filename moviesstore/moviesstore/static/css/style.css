@@ -17,7 +17,6 @@ body {
   gap: 15px;
   padding: 20px 50px;
   z-index: 10;
-  margin-left: 90%;
   align-items: center;
 }
 
@@ -28,7 +27,7 @@ body {
 }
 
 .ms-footer {
-  background-color: #202020;
+  background: url("/static/img/footer-bg.png") no-repeat fixed;
 }
 .ms-footer p {
   color: #7F7F7F;
