@@ -100,80 +100,64 @@ body {
 
 /* footer */
 footer {
-    background-color: #003057;
     color: white;
     font-family: Roboto, serif;
     background: url("/static/img/footer-bg.png") no-repeat center center;
-    background-size: 100% auto;
-    padding: 0px;
+    background-size: cover;
+    padding: 20px 10px;
 }
 
 .footer-container {
     display: flex;
-    justify-content: space-between; /* Distributes space evenly */
-    align-items: flex-start; /* Aligns columns at the top */
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    justify-content: space-between;
+    align-items: flex-start;
     width: 100%;
-    margin-left: 50px;
-    margin-right: 50px;
+    padding: 0 20px; /* Reduces fixed margins */
 }
 
+/* Footer Columns */
 .footer-column {
-  flex: 1; /* Makes each column take equal space */
-  padding: 10px;
-  min-width: 174px; /* Ensures it doesn't shrink too much */
-}
-
-.footer-column h3 {
-  font-family: Roboto, serif;
-  font-size: 18px;
-  margin-bottom: 10px;
-}
-
-.footer-column p,
-.footer-column ul {
-    font-size: 14px;
-    line-height: 1.6;
-}
-
-.footer-column ul {
-    list-style: none;
-    padding: 0;
-}
-
-.footer-column ul li {
-    margin: 5px 0;
-}
-
-.footer-column ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 14px;
-}
-
-.footer-column ul li a:hover {
-    text-decoration: underline;
+    flex: 1;
+    padding: 10px;
+    min-width: 174px; /* Prevents shrinking too much */
+    text-align: left;
 }
 
 .footer-column a {
-    color: white;
-    text-decoration: none;
+    color: white; /* Makes links white */
+    text-decoration: none; /* Removes underline */
 }
 
 .footer-column a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Underline on hover */
+    color: #f0f0f0; /* Optional: Slightly lighter color on hover */
 }
 
-/* Responsive design for smaller screens */
-@media (max-width: 100px) {
+
+/* Center text in small screens */
+@media (max-width: 768px) {
     .footer-container {
         flex-direction: column;
         text-align: center;
+        align-items: center;
     }
 
     .footer-column {
-        margin-bottom: 20px;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .footer-column h3 {
+        text-align: center;
+    }
+
+    .footer-column ul {
+        padding: 0;
+        text-align: center;
     }
 }
+
 
 /* HOME */
 .about-section {
