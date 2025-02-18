@@ -3,7 +3,7 @@ body {
 }
 
 .navbar-nav {
-    margin-right: auto; /* Pushes the links to the right */
+    margin-right: auto;
     display: flex;
     gap: 15px; /* Adds spacing between links */
     padding: 20px;
@@ -100,7 +100,7 @@ body {
 
 /* footer */
 footer {
-    background-color: #042f57; /* Dark blue background */
+    background-color: #003057;
     color: white;
     font-family: Roboto, serif;
     background: url("/static/img/footer-bg.png") no-repeat center center;
