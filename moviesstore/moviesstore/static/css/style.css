@@ -1,23 +1,23 @@
 body {
-  font-family: 'Arial', sans-serif;
-}
-
-/*.bg-index {
-  background: url("/static/img/background.jpg") no-repeat fixed;
-  background-size: 100% auto;
-}*/
-
-.navbar a.nav-link {
-  color: #FFFEF6 !important;
+  font-family: 'Roboto', serif;
 }
 
 .navbar-nav {
-  display: flex;
-  justify-content: space-between;
-  gap: 15px;
-  padding: 20px 50px;
-  z-index: 10;
-  align-items: center;
+    margin-right: auto; /* Pushes the links to the right */
+    display: flex;
+    gap: 15px; /* Adds spacing between links */
+    padding: 20px;
+}
+
+.navbar-nav .nav-link {
+    text-decoration: none; /* Removes default underline */
+    color: white; /* Ensures text is visible */
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+    text-decoration: underline; /* Adds underline only on hover */
 }
 
 
@@ -86,7 +86,7 @@ body {
 /* homepage index section */
 .index-bg {
   background: url("/static/img/popcorn-2.jpg") no-repeat center center;
-  height: 40vh;
+  height: 45vh;
   width: 100%;
   background-size: cover;
   color: white;
@@ -102,19 +102,19 @@ body {
 footer {
     background-color: #042f57; /* Dark blue background */
     color: white;
-    padding: 40px 0;
-    font-family: Arial, sans-serif;
-    height: 174px;
+    font-family: Roboto, serif;
+    background: url("/static/img/footer-bg.png") no-repeat center center;
+    background-size: 100% auto;
+    padding: 0px;
 }
 
 .footer-container {
     display: flex;
     justify-content: space-between; /* Distributes space evenly */
     align-items: flex-start; /* Aligns columns at the top */
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 20px;
-    background: url("/static/img/footer-bg.png") no-repeat center center;
+    width: 100%;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .footer-column {
@@ -124,7 +124,7 @@ footer {
 }
 
 .footer-column h3 {
-  font-family: 'Roboto', serif;
+  font-family: Roboto, serif;
   font-size: 18px;
   margin-bottom: 10px;
 }
@@ -164,7 +164,7 @@ footer {
 }
 
 /* Responsive design for smaller screens */
-@media (max-width: 768px) {
+@media (max-width: 100px) {
     .footer-container {
         flex-direction: column;
         text-align: center;
@@ -173,4 +173,29 @@ footer {
     .footer-column {
         margin-bottom: 20px;
     }
+}
+
+/* HOME */
+.about-section {
+    background-color: #042f57; /* Same color as footer for a seamless transition */
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.about-container {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.about-container h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.about-container p {
+    font-size: 16px;
+    line-height: 1.6;
 }
